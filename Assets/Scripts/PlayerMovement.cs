@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     float moveSpeed = 5f;
 
     public GameObject oempaloempa;
+    [SerializeField] private GameObject player;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown("space"))
         {
             //Instantiate oempaloempa
-            Instantiate(oempaloempa, transform.position, transform.rotation, transform.parent = null);
+            Instantiate(oempaloempa, player.transform.position, player.transform.rotation, transform.parent = null);
         }
     }
 }

@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 4291287864699985112}
   - component: {fileID: 3509399567185157630}
   - component: {fileID: 5051914382995701914}
+  - component: {fileID: 4610765628071866746}
   m_Layer: 0
   m_Name: Mui2
-  m_TagString: Untagged
+  m_TagString: mui
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,8 +91,21 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3775174942561858935}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 20.833458, y: 8.22377, z: 5.160948}
+  m_Center: {x: 9.916729, y: -0.09181118, z: -0.017985463}
+--- !u!114 &4610765628071866746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3775174942561858935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3384ea0281f16f6419c32d68d7682b47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasPlacedFlag: 0

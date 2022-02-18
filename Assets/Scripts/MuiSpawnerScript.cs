@@ -6,11 +6,14 @@ public class MuiSpawnerScript : MonoBehaviour
 {
     [SerializeField] private GameObject[] muien = new GameObject[3];
     [SerializeField] private GameObject muiHolder;
+    [SerializeField] private GameObject endZone;
     public float worldLength;
-    public int maxWorldZ;
+    public int maxWorldX;
     private void Start()
     {
         CreateMuien();
+        Instantiate(endZone);
+        endZone.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + ((worldLength+1) * 10));
     }
     private void Update()
     {
@@ -21,15 +24,16 @@ public class MuiSpawnerScript : MonoBehaviour
     }
     private void CreateMuien()
     {
+        Vector3 startPos = transform.position;
         for (int i = 0; i < worldLength; i++)
         {
             int randomMui = Random.Range(0, 3);
-            float randomXOffset = Random.Range(-2.0f, 3.0f);
-            float randomZOffset = Random.Range(-maxWorldZ, maxWorldZ + 1);
-            Instantiate(muien[randomMui], new Vector3((i * 10) + randomXOffset, 0.5f, randomZOffset), Quaternion.identity, muiHolder.transform);
+            float randomZOffset = Random.Range(-2.0f, 3.0f);
+            float randomXOffset = Random.Range(-maxWorldX + 1, maxWorldX + 1);
+            Instantiate(muien[randomMui], new Vector3(startPos.x + randomXOffset, 0.5f, startPos.z + (i * 10) + randomZOffset), Quaternion.identity, muiHolder.transform);
         }
     }
-    private void DeleteMuien()
+    public void DeleteMuien()
     {
         foreach(Transform child in muiHolder.transform)
         {
