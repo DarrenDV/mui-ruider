@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    float moveSpeed = 5f;
-
+    public float moveSpeed = 0;
+    public GameObject startButton;
     public GameObject oempaloempa;
     [SerializeField] private GameObject player;
 
@@ -25,5 +25,10 @@ public class PlayerMovement : MonoBehaviour
             //Instantiate oempaloempa
             Instantiate(oempaloempa, player.transform.position, player.transform.rotation, transform.parent = null);
         }
+    }
+    public void StartGame()
+    {
+        moveSpeed = 5;
+        startButton.SetActive(false);
     }
 }
