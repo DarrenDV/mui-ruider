@@ -13,4 +13,11 @@ public class MUI : MonoBehaviour
             GameObject.Find("LivesText").GetComponent<LivesTest>().RemoveLife();
         }
     }
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("Pylon"))
+        {
+            hasPlacedFlag = true;
+        }
+    }
 }

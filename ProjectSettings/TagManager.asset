@@ -6,6 +6,7 @@ TagManager:
   tags:
   - EndZone
   - mui
+  - Pylon
   layers:
   - Default
   - TransparentFX

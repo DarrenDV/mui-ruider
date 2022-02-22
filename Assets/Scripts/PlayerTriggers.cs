@@ -27,8 +27,7 @@ public class PlayerTriggers : MonoBehaviour
             muiSpawner.DeleteMuien();
         }
     }
-
-    private void OnTriggerStay(Collider other)
+    /*private void OnTriggerStay(Collider other)
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -37,7 +36,7 @@ public class PlayerTriggers : MonoBehaviour
                 other.GetComponent<MUI>().hasPlacedFlag = true;
             }
         }
-    }
+    }*/
 
     private void OnTriggerExit(Collider other)
     {
