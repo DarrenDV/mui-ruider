@@ -753,6 +753,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd52d63b19100fa40aed2e5f43564177, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 5
+  startButton: {fileID: 0}
   oempaloempa: {fileID: 3239097068663190693, guid: e21dc9216a55f754bb6fa082121e7ae0, type: 3}
   player: {fileID: 816346968}
 --- !u!4 &2118889849

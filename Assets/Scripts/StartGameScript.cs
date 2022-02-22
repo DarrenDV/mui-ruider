@@ -7,6 +7,6 @@ public class StartGameScript : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("Main", LoadSceneMode.Additive);
+        SceneManager.LoadScene("Main 1", LoadSceneMode.Single);
     }
 }
