@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class LivesTest : MonoBehaviour
 {
@@ -19,5 +20,15 @@ public class LivesTest : MonoBehaviour
     {
         lives--;
         livesText.text = "Strikes left: " + lives;
+
+        if (lives < 0)
+        {
+            GameOver();
+        }
+    }
+
+    public void GameOver()
+    {
+        SceneManager.LoadScene("GameOver");
     }
 }
