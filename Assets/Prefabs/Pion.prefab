@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 3239097068663190682}
   - component: {fileID: 3239097068663190683}
   - component: {fileID: 3433307875905725633}
+  - component: {fileID: 6282310504867989627}
   m_Layer: 0
   m_Name: Pion
-  m_TagString: Untagged
+  m_TagString: Pylon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95,3 +96,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destructionTime: 5
+--- !u!65 &6282310504867989627
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3239097068663190693}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 7.2137384, z: 1}
+  m_Center: {x: 0, y: 3.1068692, z: 0}
